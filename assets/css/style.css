@@ -5,3 +5,18 @@
 #main {
   margin-left: 120px;
 }
+
+/* span.TypedCursor {
+  animation: blink 1s infinite;
+}
+
+span.TypedCursor.typing {
+  animation: none;
+} */
+
+.hero-image {
+  background-image: url(./../images/coverPhoto.JPG);
+  min-height: 100%;
+  min-width: 100%;
+  background-size: cover;
+}
