@@ -3,6 +3,11 @@
   background-color: #fae151;
 }
 
+#myIcon {
+  margin: 10px;
+  vertical-align: middle;
+}
+
 #main {
   margin-left: 120px;
   background-color: #fae151;
@@ -36,6 +41,12 @@ h2,
 p {
   margin: 0px;
   padding: 10px;
+}
+
+hr {
+  background-color: #fae151;
+  height: 1px;
+  border: none;
 }
 
 #about {
