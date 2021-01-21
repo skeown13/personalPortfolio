@@ -3,8 +3,12 @@
   background-color: #fae151;
 }
 
+#topNavbar {
+  background-color: #fae151;
+}
+
 #myIcon {
-  margin: 10px;
+  margin: 10px 10px 20px 10px;
   vertical-align: middle;
 }
 
@@ -43,7 +47,13 @@ p {
   padding: 10px;
 }
 
+.sectionTitle {
+  text-align: center;
+}
+
 hr {
+  width: 50%;
+  margin: auto;
   background-color: #fae151;
   height: 1px;
   border: none;
