@@ -5,6 +5,7 @@
 
 #main {
   margin-left: 120px;
+  background-color: #fae151;
 }
 
 @media (max-width: 600px) {
@@ -29,4 +30,26 @@ span.TypedCursor.typing {
   min-height: 100%;
   min-width: 100%;
   background-size: cover;
+}
+
+h2,
+p {
+  margin: 0px;
+  padding: 10px;
+}
+
+#about {
+  background-color: #689fda;
+}
+
+#portfolio {
+  background-color: #9eccf6;
+}
+
+#education {
+  background-color: #5d829f;
+}
+
+#contact {
+  background-color: #2d4f78;
 }
