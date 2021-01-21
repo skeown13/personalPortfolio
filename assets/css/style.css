@@ -1,9 +1,19 @@
 #sideNavbar {
   width: 120px;
+  background-color: #fae151;
 }
 
 #main {
   margin-left: 120px;
+}
+
+@media (max-width: 600px) {
+  #sideNavbar {
+    width: 0px;
+  }
+  #main {
+    margin-left: 0px;
+  }
 }
 
 /* span.TypedCursor {
