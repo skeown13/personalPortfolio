@@ -41,6 +41,27 @@ span.TypedCursor.typing {
   background-size: cover;
 }
 
+.hero-text {
+  color: #fae151;
+  text-shadow: 3px 3px 0 black;
+  text-align: center;
+}
+
+#myNameIs {
+  font-family: "Acme", sans-serif;
+  font-size: 8vw;
+}
+
+#myName {
+  font-family: "Satisfy", cursive;
+  font-size: 7vw;
+}
+
+#iAmA {
+  font-family: "Acme", sans-serif;
+  font-size: 4vw;
+}
+
 h2,
 p {
   margin: 0px;
