@@ -2,10 +2,11 @@
 const TypedText = document.querySelector(".typedText")
 const TypedCursor = document.querySelector(".typedCursor")
 
-const textArray = ["Coder", "Pilot", "Adventurer"]
+const textArray = [" Programmer", " Pilot", "n Adventurer", " Learner"]
 const typingDelay = 200
 const erasingDelay = 100
 const newTextDelay = 500
+const textPause = 3000
 let textArrayIndex = 0
 let charIndex = 0
 
@@ -18,9 +19,8 @@ function type() {
     charIndex++
     setTimeout(type, typingDelay)
   } else {
-    console.log("in")
     TypedCursor.classList.remove("typing")
-    setTimeout(erase, newTextDelay)
+    setTimeout(erase, textPause)
   }
 }
 
