@@ -4,6 +4,7 @@
 }
 
 #topNavbar {
+  height: 34px;
   background-color: #fae151;
 }
 
@@ -22,6 +23,7 @@
     width: 0px;
   }
   #main {
+    margin-top: 34px;
     margin-left: 0px;
   }
 }
@@ -70,6 +72,7 @@ p {
 
 .sectionTitle {
   text-align: center;
+  padding-top: 34px;
 }
 
 hr {
