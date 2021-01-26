@@ -98,3 +98,14 @@ hr {
 #contact {
   background-color: #2d4f78;
 }
+
+#logoContact {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.logoContactImg {
+  width: 250px;
+  height: 250px;
+  margin: 20px;
+}
