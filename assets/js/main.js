@@ -2,7 +2,7 @@
 const TypedText = document.querySelector(".typedText")
 const TypedCursor = document.querySelector(".typedCursor")
 
-const textArray = [" Programmer", " Pilot", "n Adventurer", " Learner"]
+const textArray = [" Software Engineer", " Pilot", "n Adventurer", " Gamer", " Programmer", " Learner"]
 const typingDelay = 200
 const erasingDelay = 100
 const newTextDelay = 500
