@@ -28,13 +28,23 @@
   }
 }
 
-/* span.TypedCursor {
-  animation: blink 1s infinite;
+.typedCursor {
+  animation: blinkCursor 0.8s steps(2) infinite normal;
 }
 
-span.TypedCursor.typing {
+@keyframes blinkCursor {
+  from {
+    color: #fae151;
+  }
+  to {
+    color: transparent;
+    text-shadow: none;
+  }
+}
+
+.typedCursor.typing {
   animation: none;
-} */
+}
 
 .hero-image {
   background-image: url(./../images/coverPhoto.JPG);
