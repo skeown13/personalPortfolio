@@ -119,3 +119,9 @@ hr {
   height: 250px;
   margin: 20px;
 }
+
+.projectCard {
+  background-color: rgba(250, 225, 81, 0.75);
+  padding: 10px;
+  margin: 10px;
+}
