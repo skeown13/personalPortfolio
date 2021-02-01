@@ -55,23 +55,19 @@
 
 .hero-text {
   color: #fae151;
-  text-shadow: 3px 3px 0 black;
   text-align: center;
-}
-
-#myNameIs {
-  font-family: "Acme", sans-serif;
-  font-size: 8vw;
 }
 
 #myName {
   font-family: "Satisfy", cursive;
-  font-size: 7vw;
+  font-size: 8vw;
+  text-shadow: 5px 5px 0 black;
 }
 
 #iAmA {
   font-family: "Acme", sans-serif;
   font-size: 4vw;
+  text-shadow: 3px 3px 0 black;
 }
 
 h2,
