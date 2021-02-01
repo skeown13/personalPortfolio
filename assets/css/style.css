@@ -80,9 +80,14 @@ p {
   padding: 10px;
 }
 
+p {
+  font-family: "Courgette", sans-serif;
+}
+
 .sectionTitle {
   text-align: center;
   padding-top: 34px;
+  font-family: "Merienda", sans-serif;
 }
 
 hr {
@@ -124,4 +129,8 @@ hr {
   background-color: rgba(250, 225, 81, 0.75);
   padding: 10px;
   margin: 10px;
+}
+
+.workExpTitle {
+  font-family: "Kaushan Script", cursive, Helvetica, Arial, sans-serif;
 }
