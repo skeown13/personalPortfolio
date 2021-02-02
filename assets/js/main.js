@@ -51,17 +51,13 @@ const sectionsCardItem = document.getElementsByClassName("sectionsCardItem")
 function sectionsDropdown() {
   if ( sectionsCardContent.className.indexOf("w3-show") == -1 ) {
     sectionsCardContent.className += " w3-show"
-    // sectionsCardButton.className += " w3-show"
-    console.log("I'm in and showing", sectionsCardContent.className)
   } else {
     sectionsCardContent.className = sectionsCardContent.className.replace(" w3-show", "")
-    // sectionsCardButton.className = sectionsCardButton.className.replace(" w3-show", "")
   }
 }
 
 function closeSectionsDropdown() {
   sectionsCardContent.className = sectionsCardContent.className.replace(" w3-show", "")
-  // sectionsCardButton.className = sectionsCardContent.className.replace(" w3-show", "")
 }
 
 sectionsCardButton.addEventListener("click", sectionsDropdown)
