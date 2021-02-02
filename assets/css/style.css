@@ -4,8 +4,12 @@
 }
 
 #topNavbar {
-  height: 34px;
+  height: 38px;
   background-color: #fae151;
+}
+
+#sectionsCard {
+  background-color: rgba(250, 225, 81, 0.5);
 }
 
 #myIcon {
@@ -23,7 +27,7 @@
     width: 0px;
   }
   #main {
-    margin-top: 34px;
+    margin-top: 38px;
     margin-left: 0px;
   }
 }
@@ -82,7 +86,7 @@ p {
 
 .sectionTitle {
   text-align: center;
-  padding-top: 34px;
+  padding-top: 38px;
   font-family: "Merienda", sans-serif;
 }
 
