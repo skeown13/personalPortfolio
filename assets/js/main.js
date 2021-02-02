@@ -44,36 +44,30 @@ document.addEventListener("DOMContentLoaded", function() {
 })
 
 // ------- Variables and Functions for Clickable Dropdown NavBar -------
-const sectionsCard = document.getElementById("sectionsCardButton")
+const sectionsCardButton = document.getElementById("sectionsCardButton")
+const sectionsCardContent = document.getElementById("sectionsCardContent")
 const sectionsCardItem = document.getElementsByClassName("sectionsCardItem")
 
-sectionsCard.addEventListener("click", function(e) {
-  e.preventDefault()
-  console.log("check 1", sectionsCard.className)
-  if ( sectionsCard.className.indexOf("w3-show") == -1 ) {
-    sectionsCard.className += " w3-show"
-    console.log("check 2", sectionsCard.className)
+function sectionsDropdown() {
+  if ( sectionsCardContent.className.indexOf("w3-show") == -1 ) {
+    sectionsCardContent.className += " w3-show"
+    console.log("I'm in and showing", sectionsCardContent.className)
   } else {
-    console.log("check 3")
-    sectionsCard.className = sectionsCard.className.replace(" w3-show", "")
+    sectionsCardContent.className = sectionsCardContent.className.replace(" w3-show", "")
   }
-})
+}
 
-sectionsCardItem.addEventListener("click", function() {
-  sectionsCard.className = sectionsCard.className.replace(" w3-show", "")
-})
+function closeSectionsDropdown() {
+  sectionsCardContent.className = sectionsCardContent.className.replace(" w3-show", "")
+}
 
-// function sectionsDropdown() {
-//   if ( sectionsCard.className.indexOf("w3-show") == -1 ) {
-//     sectionsCard.className += " w3-show"
-//   } else {
-//     sectionsCard.className = sectionsCard.className.replace(" w3-show", "")
-//   }
-// }
+sectionsCardButton.addEventListener("click", sectionsDropdown)
 
-// function closeSectionsDropdown() {
-//   sectionsCard.className = sectionsCard.className.replace(" w3-show", "")
-// }
+for ( let i = 0; i < sectionsCardItem.length; i++ ) {
+  sectionsCardItem[i].addEventListener("click", closeSectionsDropdown)
+}
+
+
 
 // ------- AOS (Animation on Scroll) Initialization -------
 AOS.init()
