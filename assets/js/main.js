@@ -15,7 +15,6 @@ function type() {
   if (charIndex < textArray[textArrayIndex].length) {
     if (!TypedCursor.classList.contains("typing")) TypedCursor.classList.add("typing")
     TypedText.textContent += textArray[textArrayIndex].charAt(charIndex)
-    console.log(textArray[textArrayIndex].charAt(charIndex))
     charIndex++
     setTimeout(type, typingDelay)
   } else {
@@ -45,19 +44,36 @@ document.addEventListener("DOMContentLoaded", function() {
 })
 
 // ------- Variables and Functions for Clickable Dropdown NavBar -------
-let sectionsCard = document.getElementById("sectionsCard")
+const sectionsCard = document.getElementById("sectionsCardButton")
+const sectionsCardItem = document.getElementsByClassName("sectionsCardItem")
 
-function sectionsDropdown() {
+sectionsCard.addEventListener("click", function(e) {
+  e.preventDefault()
+  console.log("check 1", sectionsCard.className)
   if ( sectionsCard.className.indexOf("w3-show") == -1 ) {
     sectionsCard.className += " w3-show"
+    console.log("check 2", sectionsCard.className)
   } else {
+    console.log("check 3")
     sectionsCard.className = sectionsCard.className.replace(" w3-show", "")
   }
-}
+})
 
-function closeSectionsDropdown() {
+sectionsCardItem.addEventListener("click", function() {
   sectionsCard.className = sectionsCard.className.replace(" w3-show", "")
-}
+})
+
+// function sectionsDropdown() {
+//   if ( sectionsCard.className.indexOf("w3-show") == -1 ) {
+//     sectionsCard.className += " w3-show"
+//   } else {
+//     sectionsCard.className = sectionsCard.className.replace(" w3-show", "")
+//   }
+// }
+
+// function closeSectionsDropdown() {
+//   sectionsCard.className = sectionsCard.className.replace(" w3-show", "")
+// }
 
 // ------- AOS (Animation on Scroll) Initialization -------
 AOS.init()
