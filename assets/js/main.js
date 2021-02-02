@@ -1,4 +1,4 @@
-
+// ------- Variables and Functions for Typewriter Effect -------
 const TypedText = document.querySelector(".typedText")
 const TypedCursor = document.querySelector(".typedCursor")
 
@@ -44,5 +44,20 @@ document.addEventListener("DOMContentLoaded", function() {
   if(textArray.length) setTimeout(type, newTextDelay)
 })
 
+// ------- Variables and Functions for Clickable Dropdown NavBar -------
+let sectionsCard = document.getElementById("sectionsCard")
 
+function sectionsDropdown() {
+  if ( sectionsCard.className.indexOf("w3-show") == -1 ) {
+    sectionsCard.className += " w3-show"
+  } else {
+    sectionsCard.className = sectionsCard.className.replace(" w3-show", "")
+  }
+}
+
+function closeSectionsDropdown() {
+  sectionsCard.className = sectionsCard.className.replace(" w3-show", "")
+}
+
+// ------- AOS (Animation on Scroll) Initialization -------
 AOS.init()
